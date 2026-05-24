@@ -104,6 +104,8 @@ body{font-family:'DM Sans',sans-serif;color:#1E2A3A;background:#fff;overflow-x:h
 .way-img-inner{width:100%;height:100%;background:var(--cream-2);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
 .way-img-inner::before{content:'';position:absolute;width:220px;height:220px;background:var(--teal-light);border-radius:50%;top:18%;left:6%}
 .way-img-inner::after{content:'';position:absolute;width:160px;height:160px;background:var(--coral-light);border-radius:50%;bottom:12%;right:10%}
+.way-img-inner img{width:100%;height:100%;object-fit:cover;display:block;position:relative;z-index:1}
+.way-img-inner:has(img)::before,.way-img-inner:has(img)::after{display:none}
 .way-img-label{position:absolute;bottom:22px;left:22px;background:rgba(255,255,255,0.92);backdrop-filter:blur(4px);border-radius:10px;padding:10px 16px;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-mid);z-index:2;font-weight:400}
 .way-img-badge{position:absolute;top:22px;right:22px;z-index:2;background:var(--teal);color:#fff;border-radius:50%;width:62px;height:62px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:10.5px;font-weight:400;line-height:1.3;letter-spacing:0.02em}
 .way-img-placeholder-txt{position:relative;z-index:2;text-align:center}
