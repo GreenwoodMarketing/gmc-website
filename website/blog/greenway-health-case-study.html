@@ -155,12 +155,18 @@
       </div>
       <p class="fb-desc">Strategic marketing for companies that have something worth saying &#8212; and need the world to hear it.</p>
     </div>
-    <div class="fc"><h4>Work</h4><ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li><a href="/about.html">Speaking</a></li>
-    </ul></div>
+    <div class="fc fc-email">
+      <h4>Stay in the loop</h4>
+      <p class="fc-email-desc">Marketing insights, no fluff. Drop your email and I&#8217;ll handle the rest.</p>
+      <form name="newsletter" data-netlify="true" netlify-honeypot="bot-field" method="POST" action="/newsletter-success.html" class="footer-email-form">
+        <input type="hidden" name="form-name" value="newsletter">
+        <p style="display:none"><label>Don&#8217;t fill this out: <input name="bot-field"></label></p>
+        <div class="footer-email-row">
+          <input type="email" name="email" placeholder="your@email.com" required class="footer-email-input">
+          <button type="submit" class="footer-email-btn">&#8594;</button>
+        </div>
+      </form>
+    </div>
     <div class="fc"><h4>Services</h4><ul>
       <li><a href="/services/messaging-positioning.html">Messaging &amp; Positioning</a></li>
       <li><a href="/services/go-to-market.html">Go-to-Market</a></li>
