@@ -3,6 +3,24 @@ var cur = 0;
 var slides = document.querySelectorAll('.hslide');
 var dots = document.querySelectorAll('.hdot');
 var timer;
+
+// Auto-size carousel to tallest slide so button is never covered
+function setCarouselHeight() {
+  var carousel = document.getElementById('carousel');
+  if (!carousel || !slides.length) return;
+  var maxH = 0;
+  slides.forEach(function(slide) {
+    var prev = slide.style.cssText;
+    slide.style.cssText = 'position:relative!important;opacity:1!important;transform:none!important;pointer-events:none';
+    var h = slide.offsetHeight;
+    slide.style.cssText = prev;
+    if (h > maxH) maxH = h;
+  });
+  carousel.style.minHeight = (maxH + 8) + 'px';
+}
+setCarouselHeight();
+window.addEventListener('resize', setCarouselHeight);
+
 if (slides.length) {
   timer = setInterval(function(){ goTo((cur + 1) % slides.length); }, 5500);
 }
