@@ -207,14 +207,14 @@ window.addEventListener('scroll', () => {
       <span style="font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;color:var(--navy)">Greenway Health Case Study</span>
       <button onclick="closePDF()" style="background:none;border:none;font-size:26px;cursor:pointer;color:var(--text-mid);line-height:1;padding:0 4px">&times;</button>
     </div>
-    <iframe src="/files/greenway-case-study.pdf#zoom=page-width&toolbar=1&scrollbar=1" style="flex:1;width:100%;height:100%;border:none;min-height:0;display:block"></iframe>
+    <iframe id="pdf-frame" src="" style="flex:1;width:100%;height:100%;border:none;min-height:0;display:block"></iframe>
   </div>
 </div>
 <script>
 function openPDF() {
   var m = document.getElementById('pdf-modal');
-  var iframe = m.querySelector('iframe');
-  iframe.src = '/files/greenway-case-study.pdf#zoom=page-width&toolbar=1&scrollbar=1';
+  var pdfUrl = 'https://greenwoodmarketingcollective.com/files/greenway-case-study.pdf';
+  document.getElementById('pdf-frame').src = 'https://docs.google.com/viewer?url=' + encodeURIComponent(pdfUrl) + '&embedded=true';
   m.style.display = 'flex';
   document.body.style.overflow = 'hidden';
 }
