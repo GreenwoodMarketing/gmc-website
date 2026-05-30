@@ -76,9 +76,8 @@
       <span class="post-meta-divider"></span>
       <span>3 min read</span>
     </div>
-    <div style="margin-top:24px;display:flex;gap:12px;flex-wrap:wrap">
+    <div style="margin-top:24px">
       <button onclick="openPDF()" style="background:var(--teal);color:#fff;border:none;padding:12px 28px;border-radius:30px;font-size:14px;font-weight:500;font-family:'DM Sans',sans-serif;cursor:pointer;letter-spacing:0.03em;transition:background 0.2s">&#128196; View Full Case Study PDF</button>
-      <a href="/files/greenway-case-study.pdf" download style="background:transparent;color:var(--teal);border:1.5px solid var(--teal);padding:12px 28px;border-radius:30px;font-size:14px;font-weight:500;text-decoration:none;letter-spacing:0.03em">&#8595; Download PDF</a>
     </div>
   </div>
 </section>
@@ -202,16 +201,13 @@ window.addEventListener('scroll', () => {
 </script>
 
 <!-- PDF Modal -->
-<div id="pdf-modal" style="display:none;position:fixed;inset:0;background:rgba(30,42,58,0.75);z-index:1000;align-items:center;justify-content:center;padding:20px">
-  <div style="background:#fff;border-radius:16px;width:100%;max-width:900px;height:90vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,0.3)">
-    <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 24px;border-bottom:1px solid rgba(61,120,114,0.15)">
+<div id="pdf-modal" style="display:none;position:fixed;inset:0;background:rgba(30,42,58,0.82);z-index:1000;align-items:center;justify-content:center;padding:12px">
+  <div style="background:#fff;border-radius:12px;width:100%;max-width:1100px;height:96vh;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 32px 80px rgba(0,0,0,0.35)">
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid rgba(61,120,114,0.15);flex-shrink:0">
       <span style="font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;color:var(--navy)">Greenway Health Case Study</span>
-      <div style="display:flex;gap:12px;align-items:center">
-        <a href="/files/greenway-case-study.pdf" download style="font-size:13px;color:var(--teal);text-decoration:none;font-family:'DM Sans',sans-serif;font-weight:400">&#8595; Download</a>
-        <button onclick="closePDF()" style="background:none;border:none;font-size:22px;cursor:pointer;color:var(--text-mid);line-height:1;padding:0 4px">&times;</button>
-      </div>
+      <button onclick="closePDF()" style="background:none;border:none;font-size:26px;cursor:pointer;color:var(--text-mid);line-height:1;padding:0 4px">&times;</button>
     </div>
-    <iframe src="/files/greenway-case-study.pdf" style="flex:1;width:100%;border:none"></iframe>
+    <iframe src="/files/greenway-case-study.pdf" style="flex:1;width:100%;border:none;min-height:0"></iframe>
   </div>
 </div>
 <script>
