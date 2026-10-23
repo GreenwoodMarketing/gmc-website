@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /contact-success
+Disallow: /newsletter-success
+
+Sitemap: https://greenwoodmarketingcollective.com/sitemap.xml
