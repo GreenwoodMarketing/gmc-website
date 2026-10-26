@@ -16,6 +16,31 @@
   status = 301
 
 [[redirects]]
+  from = "/services-2"
+  to = "/services"
+  status = 301
+
+[[redirects]]
+  from = "/healthtech"
+  to = "/services/healthcare-entry"
+  status = 301
+
+[[redirects]]
+  from = "/healthtech-1"
+  to = "/services/healthcare-entry"
+  status = 301
+
+[[redirects]]
+  from = "/blog-4-1/powerofpersonalization"
+  to = "/blog/personalized-marketing-strategies"
+  status = 301
+
+[[redirects]]
+  from = "/blog-4-1/the-product-marketing-documents-every-company-needs-and-how-to-actually-use-them"
+  to = "/blog/product-marketing-documents"
+  status = 301
+
+[[redirects]]
   from = "/blog-4-1"
   to = "/blog/"
   status = 301
