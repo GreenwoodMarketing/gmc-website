@@ -158,5 +158,6 @@
 chips.forEach(function(c){c.addEventListener('click',function(){var t=c.getAttribute('data-filter');chips.forEach(function(x){x.setAttribute('aria-pressed',x===c?'true':'false')});
 cards.forEach(function(k){k.hidden=!(t==='all'||k.getAttribute('data-tag')===t)});if(band)band.hidden=(t!=='all');});});})();
 </script>
+<script src="/js/nav.js" defer></script>
 </body>
 </html>
