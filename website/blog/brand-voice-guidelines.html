@@ -40,6 +40,24 @@
 .post-cta h2 em{font-style:italic;color:var(--teal);}
 .post-cta p{font-family:'DM Sans',sans-serif;font-size:16px;color:#4A5568;line-height:1.72;margin:0 0 36px;font-weight:300;}
 .post-cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+.vt-fig{margin:40px 0 48px;background:#FBF5E8;border-radius:18px;padding:40px 36px 32px;}
+.vt-head{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.6vw,40px);font-weight:400;color:var(--navy);text-align:center;margin:0 0 28px;line-height:1.15;}
+.vt-head em{font-style:italic;color:var(--teal);}
+.vt-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.vt-col{border-radius:14px;padding:26px 26px 22px;}
+.vt-voice{background:#1E3A5C;color:#fff;}
+.vt-tone{background:#fff;border:1px solid rgba(61,120,114,.22);color:#4A5568;}
+.vt-label{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:400;margin:0;line-height:1.1;}
+.vt-voice .vt-label{color:#E8C27A;}
+.vt-tone .vt-label{color:var(--teal);}
+.vt-sub{font-family:'DM Sans',sans-serif;font-size:11px;letter-spacing:2.5px;text-transform:uppercase;margin:6px 0 18px;opacity:.75;}
+.post-body .vt-col ul{list-style:none;padding:0;margin:0;}
+.post-body .vt-col li{font-size:15px;line-height:1.5;margin:0;padding:10px 0;border-top:1px solid rgba(255,255,255,.14);}
+.post-body .vt-tone li{border-top-color:rgba(61,120,114,.14);}
+.vt-col li strong{font-weight:500;}
+.post-body .vt-voice li strong{color:#fff;}
+.vt-foot{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(20px,2.4vw,24px);color:var(--navy);text-align:center;margin:26px 0 0;}
+@media(max-width:640px){.vt-grid{grid-template-columns:1fr;}.vt-fig{padding:30px 20px 24px;}}
 @media(max-width:768px){
 .post-hero-inner,.post-body-wrap,.post-cta{padding-left:24px;padding-right:24px;}
 .post-hero{padding:100px 0 60px;}
@@ -113,6 +131,33 @@
     <h2>Brand voice vs. tone: what&#8217;s the difference?</h2>
     <p>These two get used interchangeably, and they shouldn&#8217;t be. <strong>Your voice is who you are. Your tone is how you show up in a given moment.</strong></p>
     <p>You&#8217;re the same person at a celebration and at a hard conversation, but you&#8217;d be a little alarming if you sounded identical at both. Brands work the same way. A playful brand can be serious in a data breach notice. It just shouldn&#8217;t sound like a stranger wrote it.</p>
+
+    <figure class="vt-fig" aria-labelledby="vt-cap">
+      <p class="vt-head" id="vt-cap">Same voice. <em>Different tone.</em></p>
+      <div class="vt-grid">
+        <div class="vt-col vt-voice">
+          <p class="vt-label">Voice</p>
+          <p class="vt-sub">Who you are, everywhere</p>
+          <ul>
+            <li>Your personality</li>
+            <li>Your values</li>
+            <li>Your words, and the ones you avoid</li>
+            <li>How people recognize you</li>
+          </ul>
+        </div>
+        <div class="vt-col vt-tone">
+          <p class="vt-label">Tone</p>
+          <p class="vt-sub">How you show up in the moment</p>
+          <ul>
+            <li><strong>Launch:</strong> excited and confident</li>
+            <li><strong>Apology:</strong> sincere and direct</li>
+            <li><strong>Support:</strong> calm and helpful</li>
+            <li><strong>Sales:</strong> clear and persuasive</li>
+          </ul>
+        </div>
+      </div>
+      <figcaption class="vt-foot">Your voice is who you are. Your tone is how you show up.</figcaption>
+    </figure>
 
     <h2>Why companies need brand voice guidelines</h2>
     <p>When a company is small, the voice lives in the founder&#8217;s head, and everything sounds consistent because it all comes from one person. Growth breaks that. These are the moments I see it happen most:</p>
